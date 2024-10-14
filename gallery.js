@@ -1,17 +1,16 @@
+/*jslint browser: true*/ /*global  $*/
 $(document).ready(function() {
-    console.log( "ready!" );
-
-    $('.carousel').slick({
-        infinite: true,
+    $(".carousel").slick({
         dots: true,
-        slidesToShow: 3,
+        infinite: true,
         responsive: [
             {
             breakpoint: 1024,
             settings: {
-            slidesToShow: 1,
+            slidesToShow: 1
             }
             }
-        ]
+        ],
+        slidesToShow: 3
     });
-});  
+});
